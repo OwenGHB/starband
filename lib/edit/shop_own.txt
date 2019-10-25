@@ -1,0 +1,120 @@
+# File: shop_own.txt
+
+
+# This file is used to initialize the "lib/data/shop_own.raw" file, which is
+# used to initialize the "shop owner" information for the Angband game.
+
+# Do not modify this file unless you know exactly what you are doing,
+# unless you wish to risk possible system crashes and broken savefiles.
+# After modifying this file, delete the "lib/data/shop_own.raw" file.
+
+
+# Format:
+# N:store:owner idx:owner name
+# I:race idx:purse:maxgreed:mingreed:haggleper:tolerance
+
+
+# Version stamp (required)
+
+V:0.4.1
+
+
+# General Store
+N:0:0:Gilbert the Friendly
+I:0:200:175:108:4:12
+N:0:1:Rincewind the Fearful
+I:1:200:175:108:4:12
+N:0:2:Snafu the Midget
+I:5:300:170:107:5:15
+N:0:3:Ra'fat the Merciful
+I:9:300:165:107:6:18
+
+# Armoury
+N:1:0:Tick-Tok the Bot
+I:15:5000:210:115:5:7
+N:1:1:Darglotis the Dark
+I:14:10000:190:111:4:9
+N:1:2:Mecado the Stout
+I:10:25000:200:112:4:10
+N:1:3:Robert the Fat
+I:2:30000:200:112:4:5
+
+# Weapon Smith
+N:2:0:Karn the Bringer of Misery
+I:16:5000:210:115:6:6
+N:2:1:Ferdinand the Hungry
+I:6:10000:185:110:5:9
+N:2:2:Batholomew the Cheap
+I:5:25000:190:115:5:7
+N:2:3:Pierre the Cook
+I:4:30000:195:112:4:8
+
+# Temple
+N:3:0:Hakieem the Splendorous
+I:17:5000:175:109:6:15
+N:3:1:Gunntorga the Brute
+I:20:10000:185:110:5:23
+N:3:2:Delilah the Pure
+I:18:25000:180:107:6:20
+N:3:3:Bosk the Wise
+I:12:30000:185:109:5:15
+
+# Alchemist
+N:4:0:Saeed the Prayer
+I:9:10000:190:111:5:8
+N:4:1:Ludvik the Chaotic
+I:6:10000:190:110:6:8
+N:4:2:Manute the Nubian
+I:3:15000:200:116:6:9
+N:4:3:Malovo the Slender
+I:7:15000:220:111:4:9
+
+# Magic Shop
+N:5:0:Leonard the Sorceress
+I:0:20000:200:110:7:8
+N:5:1:Chi Chin the Great
+I:1:20000:215:113:6:10
+N:5:2:Wayne the Mage
+I:2:30000:200:110:7:10
+N:5:3:Montoya Starshine
+I:5:30000:175:110:5:11
+
+# Black Market
+N:6:0:Lanessa the Awful
+I:12:20000:250:150:10:5
+N:6:1:Histor the Goblin
+I:23:20000:250:150:10:5
+N:6:2:Durwin the Shifty
+I:21:30000:250:150:10:5
+N:6:3:Drago the Fair
+I:18:30000:250:150:10:5
+
+# Home
+N:7:0:Your home
+I:99:0:100:100:0:99
+N:7:1:Your home
+I:99:0:100:100:0:99
+N:7:2:Your home
+I:99:0:100:100:0:99
+N:7:3:Your home
+I:99:0:100:100:0:99
+
+# library
+N:8:0:Stephen the Reckoner
+I:1:20:250:150:10:5
+N:8:1:Sean the Technician
+I:1:20:250:150:10:5
+N:8:2:Jordan Taleteller
+I:1:30:250:150:10:5
+N:8:3:Sarah of the Lute
+I:1:30:250:150:10:5
+
+# wetware
+N:9:0:R. Dan Henry the Meticulous
+I:16:0:100:100:10:5
+N:9:1:Bridger Flynn the Prolific
+I:24:0:100:100:10:5
+N:9:2:Steve Latour the Sportsman
+I:18:0:100:100:10:5
+N:9:3:Darren Hart the Talented
+I:2:0:100:100:10:5

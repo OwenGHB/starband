@@ -1,0 +1,536 @@
+# File: p_class.txt
+
+
+# This file is used to initialize the "lib/data/p_class.raw" file, which is
+# used to initialize the "player class" information for the Angband game.
+
+# Do not modify this file unless you know exactly what you are doing,
+# unless you wish to risk possible system crashes and broken savefiles.
+# After modifying this file, delete the "lib/data/p_class.raw" file.
+
+# === Understanding p_class.txt ===
+
+# Format:
+# N:class number:class name
+# S:str:int:wis:dex:con:chr
+# I:mhp:exp:unused:unused:pet_upkeep_div
+# A:max_attacks:min_weight:att_multiply
+# M:spell-stat:spell weight
+# B:spell book:handicap
+# T:title
+# E:tval:sval:min:max
+# F:class flags
+
+# B:63:99:0:0:0 is a blank book line, 63 is the last entry. 
+
+# 'N' indicates the beginning of an entry. The serial number must
+# increase for each new class.
+
+# 'S' is for the stat modifiers - strength, intelligence, wisdom,
+# dexterity, constitution, charisma.
+
+# 'C' is for the base skills - disarming, magic devices, saving throws,
+# stealth, searching ability, searching frequency, to hit (normal),
+# to hit (bows).
+
+# 'X' is for the skill modifiers - disarming, magic devices, saving
+# throws, stealth, searching ability, searching frequency, to hit
+# (normal), to hit (bows).  The modifiers are added to the base skill
+# every ten levels.
+
+# 'I' is for extra info - max. hitpoints gained per level, experience
+# factor in percent, two unused numbers, and your pet upkeep factor
+
+# 'A' is for attack info - maximum possible number of attacks, minimum
+# weapon weight for calculating the number of attacks, multiplier for
+# attack calculations.
+
+# 'M' is for magic info - tval of the used spellbook, number of the
+# spell-stat, type of spells (mage '0' or priest '1'), level of the
+# first spell, weight that hurts spells.
+
+# 'B' is for spell/prayer info - number of the spell, level, mana
+# required, fail-rate, experience for first casting.
+
+# 'T' is for class titles.
+
+# 'E' is for starting equipment - tval of the item, sval of the item,
+# minimum amount, maximum amount.
+
+# 'F' is for class flags.
+
+
+# Version stamp (required)
+
+V:0.4.1
+
+## Keeping this class
+N:0:Officer
+S:10:8:8:2:2:8
+I:8:30:9000:40:5
+A:6:30:5
+M:5:550
+B:0:4
+B:1:4
+B:2:4
+B:3:4
+B:4:4
+B:5:4
+B:6:4
+B:7:4
+B:8:4
+B:9:4
+B:10:3
+B:11:3
+B:12:3
+B:13:3
+B:14:3
+B:15:3
+B:16:3
+B:17:3
+B:18:1
+E:75:33:0:1:1
+E:23:11:0:1:1
+E:37:1:0:1:1
+E:19:2:0:1:1
+F:BRAVERY_30 | PSEUDO_ID_HEAVY | PSEUDO_ID2
+T:2nd Lt.
+T:1st Lt.
+T:Captain
+T:Major
+T:Lt. Colonel
+T:Colonel
+T:Brig. General
+T:Major General
+T:Lt. General
+T:General
+Z:2nd Lt.
+Z:1st Lt.
+Z:Captain
+Z:Major
+Z:Lt. Colonel
+Z:Colonel
+Z:Brig. General
+Z:Major General
+Z:Lt. General
+Z:General
+# Possibly a powers list for commanding things
+
+## Also keeping this class - has a great power list
+N:1:Aesthete
+S:2:6:4:8:6:10
+I:3:0:5000:30:20
+A:4:35:2
+M:5:450
+B:0:3
+B:1:3
+B:2:3
+B:3:3
+B:4:3
+B:5:3
+B:6:3
+B:7:3
+B:8:3
+B:9:3
+B:10:3
+B:11:3
+B:12:3
+B:13:3
+B:14:3
+B:15:3
+B:16:3
+B:17:3
+E:35:2:0:1:3
+E:40:9:0:3:6
+E:36:5:1:1:3
+E:32:6:0:1:3
+#They get excellent ID even though they don't need it.
+F:PSEUDO_ID_HEAVY | PSEUDO_ID4
+T:Intellectual
+T:Dilettante
+T:Heir
+T:Philanthrop.
+T:Investor
+T:Capitalist
+T:Producer
+T:Mogul
+T:Monopolist
+T:Baron
+Z:Intellectual
+Z:Dilettante
+Z:Heiress
+Z:Philanthrop.
+Z:Investor
+Z:Capitalist
+Z:Producer
+Z:Mogul
+Z:Monopolist
+Z:Baroness
+# Money and shop related powers
+
+
+#keeping this class also
+N:2:Engineer
+S:6:6:6:12:8:2
+I:4:40:3000:40:15
+A:4:35:4
+M:3:250
+B:0:3
+B:1:3
+B:2:3
+B:3:3
+B:4:3
+B:5:3
+B:6:3
+B:7:3
+B:8:3
+B:9:3
+B:10:3
+B:11:3
+B:12:3
+B:13:3
+B:14:3
+B:15:3
+B:16:3
+B:17:3
+B:18:1
+B:19:1
+B:20:1
+B:21:1
+B:22:1
+B:23:1
+E:66:4:0:1:1
+E:19:53:0:1:1
+E:90:18:0:1:1
+F:ZERO_FAIL | BEAM | PSEUDO_ID_HEAVY | PSEUDO_ID3
+T:Jr. Engineer
+T:Engineer
+T:Sr. Engineer
+T:Ch. Engineer
+T:Warrant Off.
+T:Chief WO-1
+T:Chief WO-2
+T:Chief WO-3
+T:Chief WO-4
+T:Master WO
+Z:Jr. Engineer
+Z:Engineer
+Z:Sr. Engineer
+Z:Ch. Engineer
+Z:Warrant Off.
+Z:Chief WO-1
+Z:Chief WO-2
+Z:Chief WO-3
+Z:Chief WO-4
+Z:Master WO
+# Use all devices
+
+
+#keeping this class
+N:3:Medium
+S:4:4:4:8:10:8
+I:2:35:20000:40:10
+A:6:30:5
+M:4:250
+B:0:1
+B:1:1
+B:2:1
+B:3:1
+B:4:1
+B:5:1
+B:6:1
+B:7:1
+B:8:1
+B:9:1
+B:10:2
+B:11:2
+B:12:2
+B:13:2
+B:14:2
+B:15:2
+B:16:2
+B:17:2
+E:75:36:0:1:1
+E:23:5:0:1:1
+E:36:2:0:1:1
+F:ZERO_FAIL | BEAM | PSEUDO_ID1 
+T:Touched
+T:Shining
+T:Psychic
+T:Mindreader
+T:Adept
+T:Immaculate
+T:Contemplator
+T:Mentalist
+T:Esper
+T:Mind Master
+Z:Gypsy
+Z:Palm Reader
+Z:Psychic
+Z:Mindreader
+Z:Maven
+Z:Immaculate
+Z:Contemplator
+Z:Mentalist
+Z:Esper
+Z:Mind Mistress
+#standard weak psychic powers
+
+
+#keeping this class
+N:4:Adventurer
+S:11:11:12:2:6:6
+I:13:15:9000:40:15
+A:6:30:5
+M:2:550
+B:0:3
+B:1:3
+B:2:3
+B:3:3
+B:4:3
+B:5:3
+B:6:3
+B:7:3
+B:8:3
+B:9:3
+B:10:3
+B:11:3
+B:12:3
+B:13:3
+B:14:3
+B:15:3
+B:16:3
+B:17:3
+E:75:33:0:1:1
+E:23:16:0:1:1
+E:37:4:0:1:1
+F:BRAVERY_30 | PSEUDO_ID3 
+T:Rookie
+T:Soldier
+T:Mercenary
+T:Veteran
+T:Swordsman
+T:Champion
+T:Hero
+T:Baron
+T:Duke
+T:Lord
+Z:Rookie
+Z:Soldier
+Z:Mercenary
+Z:Veteran
+Z:Swordsman
+Z:Champion
+Z:Heroine
+Z:Baroness
+Z:Duchess
+Z:Lady
+#none
+
+#keeping
+N:5:Dashing Hussar
+S:12:10:12:8:8:8
+I:10:50:9000:40:20
+A:7:25:5
+M:0:850
+B:0:5
+B:1:5
+B:2:5
+B:3:5
+B:4:5
+B:5:5
+B:6:5
+B:7:5
+B:8:5
+B:9:5
+B:10:5
+B:11:5
+B:12:5
+B:13:5
+B:14:5
+B:15:5
+B:16:5
+B:17:5
+E:75:33:0:1:1
+E:23:16:0:1:1
+E:37:4:0:1:1
+F:BRAVERY_30 | PSEUDO_ID1 | PSEUDO_ID_HEAVY
+T:2nd Lt.
+T:1st Lt.
+T:Captain
+T:Major
+T:Lt. Colonel
+T:Colonel
+T:Brig. General
+T:Major General
+T:Lt. General
+T:General
+Z:2nd Lt.
+Z:1st Lt.
+Z:Captain
+Z:Major
+Z:Lt. Colonel
+Z:Colonel
+Z:Brig. General
+Z:Major General
+Z:Lt. General
+Z:General
+#none
+
+#keeping
+N:6:Gentleman/Lady
+S:4:4:4:10:10:10
+I:4:0:9000:40:10
+A:5:35:4
+M:3:350
+B:0:1
+B:1:1
+B:2:1
+B:3:1
+B:4:1
+B:5:1
+B:6:1
+B:7:1
+B:8:1
+B:9:1
+B:10:1
+B:11:1
+B:12:1
+B:13:1
+B:14:1
+B:15:1
+B:16:1
+B:17:1
+B:19:1
+B:22:1
+B:23:1
+E:35:2:0:1:1
+E:36:5:1:1:1
+E:31:2:0:1:1
+F:ZERO_FAIL | BEAM | PSEUDO_ID1
+T:Boy
+T:Bloke
+T:Chap
+T:Fellow
+T:Gent
+T:Blue Blood
+T:Patrician
+T:Baron
+T:Duke
+T:Aristocrat
+Z:Girl
+Z:Gal
+Z:Lass
+Z:Maid
+Z:Damsel
+Z:Lady
+Z:Matron
+Z:Baroness
+Z:Duchess
+Z:Princess
+
+N:7:Rogue
+S:4:16:6:8:6:8
+I:4:25:20000:40:15
+A:5:30:3
+M:1:550
+B:0:3
+B:1:3
+B:2:3
+B:3:3
+B:4:3
+B:5:3
+B:6:3
+B:7:3
+B:8:3
+B:9:3
+B:10:3
+B:11:3
+B:12:3
+B:13:3
+B:14:3
+B:15:3
+B:16:3
+B:17:3
+B:18:2
+B:22:4
+B:23:4
+E:19:2:0:1:1
+E:24:8:0:8:12
+E:36:4:0:1:1
+F:PSEUDO_ID4 | PSEUDO_ID_HEAVY | ZERO_FAIL 
+T:Vagabond
+T:Cutpurse
+T:Footpad
+T:Robber
+T:Burglar
+T:Filcher
+T:Sharper
+T:Rogue
+T:Thief
+T:Master Thief
+Z:Gypsy
+Z:Cutpurse
+Z:Footpad
+Z:Robber
+Z:Cat Burglar
+Z:Fingersmith
+Z:Sharper
+Z:Rogue
+Z:Thief
+Z:Mistress Thief
+#some devices
+
+#keeping
+N:8:Naturalist
+#S:-3:2:3:0:1:-1
+S:4:4:8:8:12:6
+#C:30:36:30:2:16:20:34:20
+#X:7:13:9:0:0:0:15:15
+I:3:30:240000:5:5
+A:4:40:2
+M:4:550
+B:0:1
+B:1:1
+B:2:2
+B:3:2
+B:4:2
+B:5:2
+B:6:2
+B:7:2
+B:8:2
+B:9:2
+B:10:1
+B:11:1
+B:12:2
+B:13:2
+B:14:2
+B:15:2
+B:16:2
+B:17:2
+E:26:12:0:1:1
+E:35:2:0:1:1
+E:75:36:0:3:6
+F:ZERO_FAIL | PSEUDO_ID1
+T:Acolyte
+T:Farmer
+T:Grower
+T:Naturalist
+T:Sup. Natur.
+T:Ecologist
+T:Mstr. Ecolog.
+T:Druid
+T:Master Druid
+T:Arch-Druid
+Z:Acolyte
+Z:Farmer
+Z:Grower
+Z:Naturalist
+Z:Sup. Natur.
+Z:Ecologist
+Z:Mstrs Ecolog.
+Z:Druidess
+Z:Mistress Druid
+Z:Lady Druid
+#special nature powers
+

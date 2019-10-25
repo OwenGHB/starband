@@ -1,0 +1,23 @@
+
+   ************************************************************************
+   **  Steamband 0.4.1   **   The Journey from the Centre of the Earth  **
+   ************************************************************************
+
+           Based on Moria:   Copyright (c) 1985 Robert Alan Koeneke
+               and Umoria:   Copyright (c) 1989 James E. Wilson
+                   Angband 2.7.0 - 2.8.5 by Ben Harrison
+                 Angband 2.9.0 - 2.9.3 by Robert Ruehlmann
+                   4GAI by Leon Marrick and Bahman Rabii
+                   Steamband 0.4.1  By Courtney Campbell
+                            Dedicated to Seula
+
+                      Hit '?' to access detailed help! 
+                Seriously! Help is totally useful and updated!
+
+        Send comments, bug reports, and patches, to "valis@oook.cz"
+       Post your Steamband Character Dumps at "http://angband.oook.cz/"
+      Browse the Angband newsgroup at "news:rec.games.roguelike.angband"
+                      Visit the Steamband Home Page at 
+              "http://angband.oook.cz/steamband/steamband.html"
+ 
+

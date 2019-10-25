@@ -1,0 +1,498 @@
+====================================
+=== Attacking and Being Attacked === 
+====================================
+
+Attacking is simple in Steamband.  If you move into a creature, you attack it.
+You can attack from a distance by firing a gun, by magical means, or by 
+technological means (such as aiming a ray gun).  Creatures attack in the same
+way.  If they move into you, they attack you.  Some creatures can also cast
+spells from a distance, and others can use various breath weapons (such as 
+fire) on you from a distance.
+
+Creatures (or players) in walls can not be attacked by wands or other magic 
+attacks normally stopped by walls, nor can they be shot at with guns and 
+bullets. Tunnelling into the wall (using the "tunnel" or "alter" command) 
+will allow  you to attack any creature in the wall. This applies to creatures 
+which 'pass through' walls: if they 'bore through' walls, the wall is no longer
+there, and the creature can be targetted normally. If you have easy alter
+set, you may simply move towards the monster to attack it.
+
+If you are wielding a weapon, the damage for the weapon is used when you hit
+a creature.  Otherwise you get a martial attack which does damage based off
+of your skill.
+
+You may 'w'ield one weapon for melee combat, and also one firearm
+(pistol, rifle or shotgun.) You may also wear one amulet (around the one and 
+only neck of the character), two rings (on the two 'ring' fingers, i.e. the
+third finger of each hand: a magic ring does not function when worn on any
+other finger, nor may two be worn on the same finger), one light source, 
+and a full set of armor - body armor, trousers, helmet, gloves, boots and a
+cloak. Any or all of these items may provide powers to the character in 
+terms of bonuses to-hit, to-damage, to-armor class, or to other stats (in
+the latter case, a single numerical bonus applies to all affected stats.)
+ 
+Firing a gun (while wielding the appropriate launcher) is the only way to
+get the full power out of the missile.  You may of course throw an bullet at
+a monster without shooting it, but you will find the effects will not be what
+you had hoped. You must load guns before firing them by 'w'ielding the bullets.
+
+Hits and misses are determined by ability to hit versus armor class.  A hit
+is a strike that does some damage; a miss may in fact reach a target, but
+fails to do any damage.  Higher armor classes make it harder to do damage,
+and so lead to more misses; they also reduce the damage from a strike that
+actually occurs.
+ 
+
+========================
+=== Monster Memories ===
+========================
+
+There are hundreds of different creatures in the pits of Steamband, many of
+which have the same letter symbol and color on the screen.  The exact species
+of a creature can be discovered by looking at it.  It is also very difficult
+to keep track of the capabilities of various creatures.  Luckily, Steamband
+automatically keeps track of your experiences with a particular creature.
+This feature is called the monster memory.  You monster memory recalls the
+particular attacks of each creature (whether or not technically a monster)
+which you have suffered, as well as recalling if you have observed them to
+multiply or move erratically, or drop treasure, etc.  Otherwise you would
+simply have to take notes, which is an unnecessary bother.
+
+If you have killed enough of a particular creature, or suffered enough
+attacks, recalling the monster memory may also provide you with information
+not otherwise available, such as a armor class or hit dice.  These are not
+explained, but may be useful to give the relative danger of each creature.
+This memory can be passed on to a new character even after you die by means
+of a reduced save file. (You must start the new character by "opening the 
+existing save file" of the dead character for this to happen: using the 
+"start new character" option will not give access to any monster memory.)
+ 
+
+===================
+=== Your Weapon ===
+===================
+
+Carrying a weapon in your backpack does you no good.  You must wield a weapon 
+before it can be used in a fight.  A secondary weapon can be kept by keeping
+it in the backpack, and switching it with the primary weapon when needed. This 
+is most often used when switching between a melee weapon and a digging tool, 
+or when carrying two weapons, each of which provides a rare power that the 
+character needs at two separate times.
+
+Weapons have two main magical characteristics, their enchanted ability to hit
+and their enchanted ability to do damage, expressed as `(+#,+#)'.  A normal
+weapon would be `(+0,+0)'.  Many weapons in Steamband have bonuses to hit
+and/or do damage.  Some weapons are cursed, and have penalties that hurt the
+player.  Cursed weapons cannot be unwielded until the curse is lifted.
+Identifying a weapon will inform you of the magical bonuses and penalties
+and whether or not it is cursed.
+
+Steamband assumes that your youth in the rough environment near the dungeons
+has taught you the relative merits of different weapons, and displays as
+part of their description the damage dice which define their capabilities.
+Any damage enchantment is added to the dice roll for that weapon.  The dice
+used for a given  weapon is displayed as "XdY".  The number "X" indicates
+how many dice to roll, and number "Y" indicates how many sides they have. A
+"2d6" weapon will thus give damage from 2 to 12, plus any damage bonus. The
+weight of a weapon is also a consideration.  Heavy weapons may hit harder,
+but they are also harder to use.  Depending on your muscle, agility,
+character class, and weapon weight, you may get several attacks per turn: 
+high agility and muscle and low weapon weight are the main factors.
+Your blows are also affected by some skills, as well as whether or not
+you are wielding a weapon. 
+
+Guns, have their characteristics added to those of the missile used, if the
+proper weapon/missile combination is used, and the the firearm multiplier 
+is applied to the total damage, making firearms very powerful given 
+the proper bullets, especially if they are enchanted. If a gun has any slays,
+they are passed to the bullets fired from it.
+
+Although you receive any magical bonuses an unidentified weapon may possess
+when you wield it, those bonuses will not be added in to the displayed
+values of to-hit and to-dam on your character sheet.  You must identify the
+weapon before the displayed values reflect the real values used.
+
+Finally, some rare weapons have special abilities.  These are called ego
+weapons, and are feared by great and meek.  An ego weapon must be wielded
+to receive the benefit of its abilities. It should be noted that some of 
+these items are considerably more powerful than others, and generally the 
+most powerful items are the rarest. Also important is the fact that not all
+ego-items are nice...
+
+Ego weapons are denoted by the following "names":  
+
+(Holy)
+     A Holy Avenger is one of the more powerful of weapons.  A Holy Avenger
+     will increase your ego and your armour class.  This weapon will do
+     extra damage when used against evil, demonic and undead creatures, and
+     will also give you the ability to see invisible creatures.  
+
+(Defender)
+     A magical weapon that actually helps the wielder defend himself, thus
+     increasing his/her armor class, and protecting him/her against damage
+     from fire, earth, air, and water.  This weapon also will increase 
+     your stealth.
+
+(Martian)
+     A cursed alien blade raises your resistance to fire, ice, electricty
+     ether, sound, light, dark and mental attacks.  It humms and whines with
+     radical alien power decreasing your stealth, however it boosts your 
+     health, saving throw and muscle. It also sustains your muscle and agility,
+     makes you immune to fear, is branded with fire, causes criticals and 
+     slays animals. However while it is equipped it does not want to leave
+     your grasp, though it can be uncursed. It can cause mutations, and 
+     prevents any sort of teleportation of any kind, in addition to lowering
+     your resistance to poison, air, and acid.
+
+Weapon of Exigency.
+     A Weapon of Exigency is one of the more powerful weapons.  It slays
+     automata, and constructs, while increasing your muscle, agility, 
+     and vigor.  It also lets you see invisible creatures and protects 
+     from paralyzation and some slowing attacks. 
+
+Weapon of Battle.
+     A weapon of battle will allow the wielder to deliver extra attacks 
+     during each round, as well as increasing the users muscle and 
+     agility, providing immunity to fear, and often causing criticals.
+
+Elemental Branded Weapons.
+     Each of the four elemental attacks has a corresponding weapon which 
+     will do extra base damage to creatures not resistant to that 
+     element.
+     There are weapons of Flame, Frost, Lightning, Poison, and Acid 
+     elemental brands, which are named respectively "Burning", 
+     "Freezing", "Shocking" "Poisoning" and "Melting".
+
+Weapons of Slaying enemies.
+     These weapons do extra damage against creatures of a vulnerable type.
+     Weapons of Slay Evil and Slay Animal do extra base damage, while
+     weapons of Slay Alien, Elemental, Beastman, Dinosaur, Automata, 
+     Construct, Demon, Undead, and Deckcutter do more extra base damage. 
+     
+There are many more ego types in Steamband to be found. . .
+
+Ego Missile Launchers and Ammo:
+-------------------------------
+Firearms of Precision.
+    These launchers have an unnaturally high to-hit number, making them 
+    extremely accurate, and they increase your agility.
+
+Firearms of Ferocity.
+    These launchers do an unnaturally high amount of damage due to their 
+    high to-hit number, and they increase your muscle
+
+Launchers of Extra Shots.
+    These launchers have extra chambers in the weapon allowing you to load
+    additional bullets.
+
+Launchers of Extra Might.
+    These launchers have a higher base damage than normally made launchers 
+    of their type. For instance, a rifle of Extra Might (x3)(+X,+Y)(+2)
+    is really a rifle (x5)(+X,+Y) where (+X,+Y) is the standard to-hit 
+    and to-dam. As the damage multiplier with the gun affects *everything*
+    - the base arrow damage, the magical damage bonus on both the bow and
+    the arrow, and any bonuses for slaying or elemental-branded arrows - 
+    this makes it a powerful weapon.
+
+=== Your Armor Class ===
+
+Your armor class (or AC) is a number that describes the amount and the
+quality of armor being worn. Armor class will generally run from about 0 to
+150, though exceptionally good armor can improve even on the latter figure.
+ 
+The larger your armor class, the more protective it is.  A negative armor
+class would actually help get you hit.  Armor protects you in three manners.
+One, it makes you harder to be hit for damage.  A hit for no damage is the
+same as a miss.  Two, good armor will absorb some of the damage that your
+character would have taken from normal attacks.  Three, acid damage is
+reduced by wearing body armor (but the armor will be damaged instead).  It
+is obvious that a high armor class is a must for surviving the deeper levels
+of Steamband.
+
+Each piece of armour has a base armor value, which, like the damage from
+weapons, is assumed known by the player, and a magic bonus, which will not
+be displayed unless the armor has been identified or was bought in a store.
+
+Armor class values are always displayed between a set of brackets as "[#]"
+or "[#,+#]".  The first value is the armor class of the item.  The second
+number is the magical bonus of the item which is only displayed if known,
+and will always have a sign preceding the value.  Note that a few rings,
+amulets, and weapons also have the "[+#]" notation, indicating that they
+provide an armor bonus.  Many pieces of heavy body armor will also have a
+"(-#)" before the "[#,+#]", which indicates that the weight of the armor
+decreases your chances of hitting monsters.  This can range from nonexistent
+for very light armor to (-8) for the very heaviest armor!
+
+Some pieces of armor will possess special abilities denoted by the following
+names:
+
+Ego Armors:
+-----------------------
+of Inviolability to various element.
+     A character wearing armor or a shield with one such resistance will
+     take only a reduced percentage of damage from attacks involving the 
+     relevant element. Note that multiple permanent sources of resistance 
+     ARE cumulative: wearing two is better than wearing one. 
+ 
+of Inviolability to the elements.
+     A character wearing armor with this ability will have resistance to
+     Fire, Earth, Air, Water, Ice, Acid, Poison, and electricty as 
+     explained in each part above.
+
+Armor of Daoine Sidhe.
+     It will make you more stealthy.  It will sustain your ego, and help
+     you resist confusion, as well as providing some resistance to Air,
+     acid, poison, time, ether, nether, light and darkness.
+ 
+Robes of Permanence.
+     These robes are designed especially for scientists.  They provide 
+     resistance to all elements, though not to mental attacks.  They 
+     sustain all of your stats and protect you from a good deal of 
+     all experience draining.  
+
+Ego Helms:
+----------
+Stat Boosting Helms.
+     There are magical helms found in the dungeon that have the ability
+     to boost the wearer's intelligence, wisdom, or charisma.  Helms of 
+     Beauty are the ones that boost charisma.  In addition to boosting 
+     the relevant stat these helms will also prevent that stat from being 
+     drained.
+
+Hats of the Order.
+     This is the great hat of the wizards.  The wearer will have an
+     increased (and sustained) intelligence, ego, and will also be given 
+     resistance against all of the elements.  These valuable
+     helms also raise your mana and your ability to cast spells.
+
+Hats of Safari.
+     This is the hat of the hunters.  The wearer will have an
+     increased and sustained muscle, agility, and vigor, 
+     and will also be immune to any foe's attempt to slow or paralyze 
+     him or her.
+
+Hats of Rulership.
+     This is the great hat of the leaders.  The wearer will have an
+     increased and sustained ego, charm and health. It will also slow
+     the digestion of the wearer and provide resistance to confusion.
+
+Hats of Perception.
+     This is the great hat of the rogues.  The wearer will be 
+     able to see invisible creatures, and will have an increased ability to 
+     locate traps and secret doors.  It is also rumored that the wearer of 
+     such a helm will not be able to be blinded.
+
+Hats of Telepathy.
+     This hat grants the wearer the power of telepathy.
+
+Hats of Regeneration.
+     This hat will help you regenerate hit points and mana more quickly
+     than normal, allowing you to fight longer before needing to rest.  You
+     will use food faster than normal while wearing this helm because of
+     the regenerative effects.
+
+Hats of Teleportation.
+     This cursed helm will always keep the player on the hop, never sure
+     where he is and never able to stay in one place.
+
+Hats of stat reducing.
+     These helms can reduce your wisdom, intelligence or charisma.
+ 
+Ego Cloaks:
+-----------
+Cloak of Protection.
+     This finely made cloak will come with an unnaturally high enchantment
+     and is not affected by elemental based attacks and provides resistance
+     to the same. 
+
+Cloak of Stealth.
+     This cloak will increase the wearer's stealth, making the wearer less
+     likely to wake up sleeping monsters.
+
+Cloak of the Order.
+     This cloak increases and sustains schooling and ego, as well as raising
+     mana and spellcasting ability. It also provides some minor resistances.
+
+Cloak of Invisiblity
+     This cloak allows its wearer to remain hidden from monsters, all the 
+     better to surprise them by casting a spell on them.
+
+Cloak of Enveloping.
+     This cloak gets in the way of everything you try to do. You can't seem 
+     to hit monsters without having to shove aside several folds of cloth,
+     and yet more layers cushion the blow and reduce the damage you do.
+
+Cloaks of Vulnerability.
+     This severely cursed cloak appears to be powerful, but in fact lets 
+     through the full force of every attack directed at it.
+
+Ego Gloves:
+-----------
+Gloves of Free Action.
+     The wearer of these gloves will find himself resistant to paralyzing
+     attacks as well as some slowing attacks.  Because of the special 
+     nature of these gloves, magic users may wear these gloves without
+     incurring a mana penalty.   
+
+Gloves of Slaying.
+     These gloves will increase the wearer's fighting ability by boosting
+     the wearer's to-hit and to-dam values.
+
+Gloves of Agility.
+     These gloves will increase the wearer's agility.  
+
+Gloves of Power.
+     These spiked gauntlets will boost the wearer's strength as well as the 
+     wearer's  to-hit and to-dam numbers.
+
+Gloves of Weakness.
+     These gauntlets sap your strength.
+
+Gloves of Clumsiness.
+     These gauntlets make you fumble.
+
+Ego Boots:
+----------
+Boots of Slow Descent.
+     These boots protect the wearer from the effects of small falls.
+
+Boots of Stealth.
+     These boots increase the wearer's stealth, like a Cloak of Stealth.
+
+Boots of Free Action.
+     The wearer of these boots will find himself resistant to paralyzing
+     attacks as well as some slowing attacks.
+
+Boots of Speed.
+     The wearer of these boots will become unnaturally fast.
+
+Boots of Noise.
+     The wearer of these boots will make great echoing stamps as he walks 
+     around the dungeon, waking up and aggravating all monsters.
+
+Boots of Slowness.
+     They seem to be stuck to the ground, and you can hardly move at all 
+     while wearing these things.
+
+There are rumors of unique "artifact" items in the dungeon - weapons and 
+armor of all types. Many of these are more powerful than even the greatest 
+ego-items: some are weak and have little more than a name to recommend them. 
+In all cases, and indeed if the player desires to find out the powers of an 
+ego-item with random powers, use of a mechinism of *Identify* will reveal all 
+the powers of any given item.
+
+=== Non-melee attacks and resistances ===
+
+The player may at some time gain access to non-melee attacks, and many 
+monsters also have them. Monsters may cast spells at the player, and vice 
+versa. This damage generally is not affected by armor class, and does not 
+need a hit roll to hit the player or monster being aimed at.
+
+Some attacks are purely magical: attack spells which blind, confuse, slow, 
+scare or paralyze the target.  In some cases, a melee attack may also do 
+this.  These attacks are resisted by monsters of higher level (native to 
+deeper dungeon depths) and characters with a high saving throw - saving 
+throws being dependent on class, level and wisdom. There are also available
+resistances to fear, blindness and confusion, and the power of "free 
+action" prevents magical paralysis and most slowing attacks (the player may 
+still be paralyzed by being "knocked out" in melee or by a stunning attack,
+but this is very rare.) It should also be noticed that unique monsters 
+automatically pass their saving throws, and some monsters are naturally 
+resistant to confusion, fear and sleep-monster attacks. Monster spells 
+to "cause wounds" are included in this category, of attacks which do no 
+damage if a saving throw is made, or full damage if it is failed.
+
+Some melee attacks by monsters may drain a stat, as can some traps: this is 
+prevented by having that stat sustained.
+
+Some monsters may cast spells that teleport the player character. To these, 
+there is no saving throw, except to those that would actually teleport him 
+up or down one dungeon level. The player may teleport monsters in the same 
+way, with a spell or a ray gun.
+
+Other attacks are usually elemental-based. Many monsters can breathe 
+various attacks or cast bolt or ball spells, and the player may also 
+have access to bolt and ball spells.
+
+The player, and the monsters, may be resistant to these forms of attack: 
+and resistance is handled in different ways for the player and the monster, 
+and for different attack forms.
+
+Bolt spells will hit the first monster (or the player) in the line of fire:
+ball spells and breaths may centre on a target which may be hiding behind
+other targets. Ball spells and breath weapons affect an area: other monsters
+caught in the blast take reduced damage depending on how close to the 
+centre of the blast they are. Bolt and ball spells depend on the skill of 
+the monster or player: breath weapons are proportional to a fraction of the 
+monster's current hit points, with a maximum cap on the damage.
+
+In the case of fire, cold, lightning, acid and poison, if the monster has 
+resistance to a player attack of this kind it will take almost no damage.
+If the player has one or more permanent sources of resistance, he will have
+the damage reduced by the % of resistance that the character currently has.
+if the player has a temporary source of resistance (whether from potion, 
+spell or artifact), this will reduce the damage by 1/3 of its normal level,
+allowing the character to take even less damage if he has both permanent 
+and temporary resistance.
+
+The character may also gain immunity to fire, cold, lightning and acid if 
+he can get his resistance over 100%: immunity means that no damage is taken.
+Resistance values over 100% have no effect. Resistance values below 0% 
+*increase* the damage done to the player.
+
+Another attack that the player will come into contact with all too often 
+is the soul-chilling nature of the undead, which can drain the character's 
+life experience. Some monsters have a life-draining melee attack, others may 
+cast ball or bolt spells or, in extreme cases, breathe the very force of the 
+netherworld (shortened by the game to "nether".) There are two powers which 
+are of assistance in this case: that of "hold life" will prevent 90% of all
+experience drains, and in the other 10% of cases, the amount of experience 
+lost will be reduced by 90%. 
+
+Other attack forms are rarer, but may include: disenchantment (both in melee
+or by a monster breath), nexus (which may teleport the player to the monster, 
+away from the monster, up or down a level, or swap over two of the player's 
+"internal" stats), light and darkness (which will blind a non-
+resistant character), sound (which will stun a non-resistant character and 
+may destroy his tonics), rocket shards (which will cut a non-resistant 
+character and may destroy his tonics),time (which may drain experience 
+regardless of hold life, or drain stats regardless of sustains), water 
+bolts and balls (which may confuse and stun, and do considerable damage 
+from high-level monsters), ice bolts (which may cut and stun, and damage 
+potions).
+
+
+=== A note on speed ===
+
+Monsters which do not move at normal speed generally move "slowly" (-10 to
+speed), "fast" (+10), "very fast" (+20) or "incredibly fast" (+30). 
+This is further adjusted by the fact that any given individual monster may 
+have a random adjustment from (-2) to (+2) to its own speed.
+
+Generally, (+10) is exactly double normal speed, and (-10) exactly half. 
+(+20) is about three times normal speed, but after that there is less 
+noticeable improvement as speed goes higher - for instance, (+30) is not
+quite four times normal speed, and higher values than this are largely
+irrelevant. The player may find items which can be worn or wielded that 
+provide speed bonuses: these may include boots of speed, rings of speed
+and a few very rare artifacts. Boots will provide a random 1d10 to speed: 
+rings of speed may be bigger than that - generally the best that the player 
+will get is two just over (+10), but individual rings of up to (+22) speed 
+have been known (although the record cursed one is much higher, at (-56): 
+only one unsuccessful roll away from being a (+56) ring...)
+
+Separate from the question of permanent speed (as determined by the player's
+speed items and the monster's natural speed) is that of temporary speed. The 
+player may cast a spell of haste-self, or use a potion, staff or rod of speed
+or use an artifact activation to speed him temporarily: or a monster may cast
+a haste-self spell, or be affected by another monster "shrieking for help" 
+or the player reading a scroll of aggravate monster. In all cases, (+10) 
+speed is added temporarily to the affected monster or player. Using two or 
+more sources of temporary speed is cumulative only in duration - one cannot
+get from normal speed to (+20) using a potion and a spell of speed. Spells
+of temporary slowing (including monsters breathing inertia or gravity) are 
+handled the same way, with exactly (-10) being subtracted from the player
+or monster's speed temporarily, for the duration of the spell or breath's 
+effect.
+
+
