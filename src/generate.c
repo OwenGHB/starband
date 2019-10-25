@@ -794,11 +794,15 @@ static void vault_traps(int y, int x, int yd, int xd, int num)
 
 
 /*
- * Hack -- Place some sleeping monsters near the given location
+ * Place some sleeping monsters near the given location
  */
 static void vault_monsters(int y1, int x1, int num)
 {
 	int k, i, y, x;
+	int mon_level_old = monster_level;
+
+	/* Temporary increase monster level */
+	monster_level += 2;
 
 	/* Try to summon "num" monsters "near" the given location */
 	for (k = 0; k < num; k++)
@@ -815,11 +819,14 @@ static void vault_monsters(int y1, int x1, int num)
 			if (!cave_empty_bold(y, x)) continue;
 
 			/* Place the monster (allow groups) */
-			monster_level = p_ptr->depth + 2;
 			(void)place_monster(y, x, TRUE, TRUE, FALSE);
-			monster_level = p_ptr->depth;
+			
+			break;
 		}
 	}
+
+	/* Restore monster level */
+	monster_level = mon_level_old;
 }
 
 
@@ -3448,11 +3455,6 @@ static void cave_gen(void)
 /*
  * Builds a store at a given pseudo-location
  *
- * As of 2.8.1 (?) the town is actually centered in the middle of a
- * complete level, and thus the top left corner of the town itself
- * is no longer at (0,0), but rather, at (qy,qx), so the constants
- * in the comments below should be mentally modified accordingly.
- *
  * As of 2.7.4 (?) the stores are placed in a more "user friendly"
  * configuration, such that the four "center" buildings always
  * have at least four grids between them, to allow easy running,
@@ -3468,11 +3470,6 @@ static void cave_gen(void)
 static void build_store(int n, int yy, int xx)
 {
 	int y, x, y0, x0, y1, x1, y2, x2, tmp;
-
-#if 0
-	int qy = SCREEN_HGT;
-	int qx = SCREEN_WID;
-#endif
 
 	/* Find the "center" of the store */
 	y0 = yy * 9 + 6;
@@ -3561,11 +3558,6 @@ static void town_gen_hack(void)
 {
 	int y, x, k, n;
 
-#if 0
-	int qy = SCREEN_HGT;
-	int qx = SCREEN_WID;
-#endif
-
 	int rooms[MAX_STORES];
 
 
@@ -3645,13 +3637,7 @@ static void town_gen(void)
 
 	int residents;
 
-#if 0
-	int qy = SCREEN_HGT;
-	int qx = SCREEN_WID;
-#endif
-
 	bool daytime;
-
 
 	/* Day time */
 	if ((turn % (10L * TOWN_DAWN)) < ((10L * TOWN_DAWN) / 2))

@@ -1155,7 +1155,7 @@
 #define COL_LEVEL_G		64	/* "Level gain" */
 
 #define ROW_DEPTH		(Term->hgt - 1)
-#define COL_DEPTH		71	/* "Lev NNN" / "NNNN ft" */
+#define COL_DEPTH		(Term->wid - 9)	/* "Lev NNN" / "NNNN ft" */
 
 #define ROW_MAP			1
 #define COL_MAP			13
@@ -4580,3 +4580,8 @@ extern int PlayerUID;
 
 /* Total number of powers in the game + 1 */
 #define POW_MAX					280
+
+/*
+* Given an array, determine how many elements are in the array.
+*/
+#define N_ELEMENTS(a) (sizeof(a) / sizeof((a)[0]))

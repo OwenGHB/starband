@@ -188,28 +188,6 @@
 #endif
 
 
-
-/*
- * OPTION: Define "L64" if a "long" is 64-bits.  See "h-types.h".
- * The only such platform that angband is ported to is currently
- * DEC Alpha AXP running OSF/1 (OpenVMS uses 32-bit longs).
- *
- * Try to use __WORDSIZE to test for 64-bit platforms.
- * I don't know how portable this is.
- * -CJN-
- */
-#ifdef __WORDSIZE
-# if __WORDSIZE == 64
-#  define L64
-# endif
-#endif
-
-#if defined(__alpha) && defined(__osf__) && !defined(L64)
-# define L64
-#endif
-
-
-
 /*
  * OPTION: set "SET_UID" if the machine is a "multi-user" machine.
  * This option is used to verify the use of "uids" and "gids" for
