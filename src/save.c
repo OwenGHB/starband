@@ -19,8 +19,8 @@ void updatecharinfoS(void)
 	path_build(tmp_Path, sizeof(tmp_Path), ANGBAND_DIR_USER, "CharOutput.txt");
 	oFile = fopen(tmp_Path, "w");
 	fprintf(oFile, "{\n");
-	fprintf(oFile, "race: \"%s\",\n", p_info[p_ptr->prace].name);
-	fprintf(oFile, "class: \"%s\",\n", c_info[p_ptr->pclass].name);
+	fprintf(oFile, "race: \"%s\",\n", p_name + p_info[p_ptr->prace].name);
+	fprintf(oFile, "class: \"%s\",\n", c_name + c_info[p_ptr->pclass].name);
 	fprintf(oFile, "cLvl: \"%i\",\n", p_ptr->lev);
 	fprintf(oFile, "mDepth: \"%i\",\n", calcDepth);
 	fprintf(oFile, "isDead: \"%i\",\n", p_ptr->is_dead);
